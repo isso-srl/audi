@@ -19,7 +19,8 @@ Ext.application({
     autoCreateViewport: false,
     controllers:[
 		'ControllerLogin',
-        'Principal',/*
+        'Principal',
+        'configuracion.ControllerRegistrarEmpresa'/*
         'ControllerPlanCuentas',
         'configuraciones.ControllerPlanCuentas',
                 

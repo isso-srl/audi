@@ -29,7 +29,7 @@ Ext.define('Audi.controller.Principal', {
         'HeadPanel',
         'MenuPanel',
         'CenterPanel',
-		'WindowRegistrarEmpresa'/*,        
+		'configuracion.WindowRegistrarEmpresa'/*,        
         'configuraciones.WindowConfiFinanzas',
         'configuraciones.TapPanelConfiguraciones',
         'configuraciones.TapConfiPlanCuentas',
@@ -168,13 +168,13 @@ Ext.define('Audi.controller.Principal', {
        switch (button.option) {
             	case 'btnempresa':
 					console.log('hola');
-					var windoworganigrama=Ext.getCmp('RegistrarEmpresa');
-					if (windoworganigrama==undefined) {
-						windoworganigrama=Ext.create('Audi.view.WindowRegistrarEmpresa',{id:'RegistrarEmpresa'});
-						fp.add(windoworganigrama);
-						windoworganigrama.show();
+					var windowregistrarempresa=Ext.getCmp('registrarempresa');
+					if (windowregistrarempresa==undefined) {
+						windowregistrarempresa=Ext.create('Audi.view.configuracion.WindowRegistrarEmpresa',{id:'registrarempresa'});
+						fp.add(windowregistrarempresa);
+						windowregistrarempresa.show();
 					}else{
-						windoworganigrama.show();
+						windowregistrarempresa.show();
 					}
                 
 				break;
