@@ -91,7 +91,7 @@ Ext.define('Audi.controller.ControllerLogin', {
 																{
                                                                     xtype: 'menuitem',
                                                                     option:'btnempresa',
-                                                                    text: 'Registrar Empresa'
+                                                                    text: 'Registrars Empresa'
                                                                 },{
 																	xtype: 'menuitem',
 																	option:'btnusuario',
@@ -207,9 +207,13 @@ Ext.define('Audi.controller.ControllerLogin', {
                                                 //width: 198,
 															items: [
 																{
+                                                                    xtype: 'menuitem',
+                                                                    option:'btnempresa',
+                                                                    text: 'Registrar Empresa'
+                                                                },{
 																	xtype: 'menuitem',
-																	option:'btnempresa',
-																	text: 'Registrar Empresa'
+																	option:'btnusuario',
+																	text: 'Registrar Usuario'
 																},
 																{
 																	xtype: 'menuitem',
