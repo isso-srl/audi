@@ -29,7 +29,8 @@ Ext.define('Audi.controller.Principal', {
         'HeadPanel',
         'MenuPanel',
         'CenterPanel',
-		'configuracion.WindowRegistrarEmpresa'/*,        
+        'configuracion.WindowRegistrarEmpresa',        
+		'configuracion.WindowRegistrarUsuario'/*,        
         'configuraciones.WindowConfiFinanzas',
         'configuraciones.TapPanelConfiguraciones',
         'configuraciones.TapConfiPlanCuentas',
@@ -167,7 +168,7 @@ Ext.define('Audi.controller.Principal', {
        var fp=Ext.getCmp('center-panel');
        switch (button.option) {
             	case 'btnempresa':
-					console.log('hola');
+					
 					var windowregistrarempresa=Ext.getCmp('registrarempresa');
 					if (windowregistrarempresa==undefined) {
 						windowregistrarempresa=Ext.create('Audi.view.configuracion.WindowRegistrarEmpresa',{id:'registrarempresa'});
@@ -178,6 +179,18 @@ Ext.define('Audi.controller.Principal', {
 					}
                 
 				break;
+                case 'btnusuario':
+                   
+                    var windowregistrarusuario=Ext.getCmp('registrarusuario');
+                    if (windowregistrarusuario==undefined) {
+                        windowregistrarusuario=Ext.create('Audi.view.configuracion.WindowRegistrarUsuario',{id:'registrarusuario'});
+                        fp.add(windowregistrarusuario);
+                        windowregistrarusuario.show();
+                    }else{
+                        windowregistrarusuario.show();
+                    }
+                
+                break;
             default:
                 break;
         }

@@ -20,7 +20,8 @@ Ext.application({
     controllers:[
 		'ControllerLogin',
         'Principal',
-        'configuracion.ControllerRegistrarEmpresa'/*
+        'configuracion.ControllerRegistrarEmpresa',
+        'configuracion.ControllerRegistrarUsuario'/*
         'ControllerPlanCuentas',
         'configuraciones.ControllerPlanCuentas',
                 
@@ -116,9 +117,13 @@ Ext.application({
                                                 //width: 198,
 															items: [
 																{
+                                                                    xtype: 'menuitem',
+                                                                    option:'btnempresa',
+                                                                    text: 'Registrar Empresa'
+                                                                },{
 																	xtype: 'menuitem',
-																	option:'btnempresa',
-																	text: 'Registrar Empresa'
+																	option:'btnusuario',
+																	text: 'Registrar Usuario'
 																},
 																{
 																	xtype: 'menuitem',
